@@ -22,7 +22,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 2em;
-    color: #007acc;
+    color: #000000;
 }
 
 main {
@@ -32,7 +32,7 @@ main {
 main h2 {
     margin: 0;
     font-size: 1.5em;
-    color: #007acc;
+    color: #000000;
 }
 
 main ul {
@@ -46,7 +46,7 @@ main ul li {
 
 main ul li a {
     text-decoration: none;
-    color: #007acc;
+    color: #000000;
 }
 
 main ul li a:hover {
