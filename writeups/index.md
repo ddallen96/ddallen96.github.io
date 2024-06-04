@@ -1,7 +1,5 @@
 ---
 layout: default
-title: "Write Ups"
-permalink: /writeups/
 ---
 
 # Write Ups
