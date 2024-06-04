@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Azure Recon with BloodHound</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Intro to Azure Recon with BloodHound</h1>
+        </header>
+        <main>
+            <article id="content">
+                <!-- Markdown content goes here -->
+                <textarea id="markdown" style="display: none;">
+# Introduction
+Test
+                </textarea>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; 2024 Daniel Allen</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const markdownText = document.getElementById('markdown').value;
+            const content = document.getElementById('content');
+            content.innerHTML = marked(markdownText);
+        });
+    </script>
+</body>
+
+</html>
