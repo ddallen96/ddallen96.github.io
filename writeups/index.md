@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Write Ups"
 permalink: /writeups/
 ---
