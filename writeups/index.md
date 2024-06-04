@@ -4,4 +4,4 @@ layout: default
 
 # Write Ups
 
-- [Intro to Azure Recon with BloodHound](intro-to-azure-recon.html)
+- [Intro to Azure Recon with BloodHound](writeups/intro-to-azure-recon)
