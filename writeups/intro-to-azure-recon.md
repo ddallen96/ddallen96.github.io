@@ -5,6 +5,7 @@ layout: default
 # Overview
 
 This is a writeup for the [Intro to Azure Recon with BloodHound](https://pwnedlabs.io/labs/intro-to-azure-recon-with-bloodhound) lab at pwned labs
+
 I worked through the walkthrough last week as I hadn't used bloodhound before, now I'm going to run through again while trying to write some re-usable scripts for future labs
 
 # Lab
@@ -49,6 +50,7 @@ $roles | Format-Table RoleDefinitionName, Scope, CanDelegate
 ```
 
 This was interestingly awkward, for some reason the Get-AzRoleAssignment cmdlet doesn't allow you to specify a scope and sign-in name when using expand principal groups
+
 I got around this by just setting the context and appending the reults for each subscription, I'll keep this around for future Azure labs
 
 # Lessons Learnt
