@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 # Overview
 
 This is a writeup for the [Intro to Azure Recon with BloodHound](https://pwnedlabs.io/labs/intro-to-azure-recon-with-bloodhound) lab at pwned labs
