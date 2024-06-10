@@ -41,11 +41,11 @@ We can select the "Azure AD Admin Roles" section to view what roles our user has
 
 ![admin roles](/images/azure-recon-adminroles.png)
 
-The script provided in the walkthrough for security attributes also works for larger environments, so lets look at role enumeration
+The script provided in the walkthrough for security attributes also works for larger environments, so lets look at role enumeration instead
 
 ## Role Enumeration
 
-Lets write a generic script for enumerating permissions
+Lets write a generic script for enumerating Azure RBAC permissions
 
 ```powershell
 $session = Connect-AzAccount -UseDeviceAuthentication
