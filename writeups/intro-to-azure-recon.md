@@ -91,6 +91,7 @@ I got around this by just setting the context and appending the reults for each 
 ## VM Userdata
 
 The only role we have is for the VM, so lets write a script that would also work in a larger environment
+
 Userdata is only returned when directly specifying an individual VM
 
 ```powershell
