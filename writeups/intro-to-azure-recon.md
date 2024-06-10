@@ -9,9 +9,43 @@ I worked through the walkthrough last week as I hadn't used bloodhound before, n
 
 # Lab
 
+## Bloodhound
+
+I'm using WSL2 kali linux, lets follow the setup guide for bloodhound [here](https://bloodhound.readthedocs.io/en/latest/installation/linux.html) and then run the neo4j console
+
+![neo4j console](/images/azure-recon-neo4j.png)
+
+Checking the azurehound docs [here](https://github.com/BloodHoundAD/AzureHound?tab=readme-ov-file#quickstart) we need to run 
+
+```bash
+azurehound list -u "$USERNAME" -p "$PASSWORD" -t "$TENANT" -o "mytenant.json"
+```
+
+We can get the tenant ID from a simple az login using the lab provided creds
+
+![az login](/images/azure-recon-az-login.png)
+
+Great, now we can run azurehound with our details
+
+![azurehound](/images/azure-recon-azurehound.png)
+
+Now we select upload data and provide our json output
+
+![import](/images/azure-recon-upload.png)
+
+Lets seach for the provided user to check the import was sucessful
+
+![jose](/images/azure-recon-jose.png)
+
+We can select the "Azure AD Admin Roles" section to view what roles our user has (I also changed the view because my eyes were burning)
+
+![admin roles](/images/azure-recon-adminroles.png)
+
+The script provided in the walkthrough for security attributes also works for larger environments, so lets look at role enumeration
+
 ## Role Enumeration
 
-To start with we are given some user credentials for azure, lets write a generic script for enumerating permissions
+Lets write a generic script for enumerating permissions
 
 ```powershell
 $session = Connect-AzAccount -UseDeviceAuthentication
